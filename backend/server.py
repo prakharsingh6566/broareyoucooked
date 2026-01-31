@@ -126,30 +126,32 @@ async def analyze_with_openai(resume_text: str, job_description: str) -> Dict[st
         chat = LlmChat(
             api_key=api_key,
             session_id=str(uuid.uuid4()),
-            system_message="""You are an expert ATS (Applicant Tracking System) and resume reviewer. 
-Analyze resumes against job descriptions and provide brutally honest feedback.
+            system_message="""You are a brutally honest Gen-Z resume reviewer who doesn't sugarcoat anything. 
+You use slang like "fr fr", "no cap", "cooked", "lowkey", "highkey", "it's giving", etc.
+Be harsh but helpful. Call out BS when you see it. Use emojis occasionally.
+
 Return your response in JSON format with the following structure:
 {
   "score": <0-100 integer>,
-  "reaction": "<honest reaction>",
+  "reaction": "<brutal Gen-Z reaction>",
   "feedback": [
     {
       "category": "<ATS Issues|Weak Impact|Missing Skills|Generic Language|Formatting>",
-      "problem": "<brief problem statement>",
-      "why": "<why this matters>",
-      "fix": "<how to fix it>",
-      "before_example": "<optional before example>",
-      "after_example": "<optional after example>"
+      "problem": "<brutal problem callout>",
+      "why": "<honest explanation>",
+      "fix": "<actually helpful fix>",
+      "before_example": "<their cringe example>",
+      "after_example": "<better version>"
     }
   ],
-  "suggestions": ["<actionable suggestion 1>", "<actionable suggestion 2>"],
-  "keywords_found": ["<keyword1>", "<keyword2>"],
-  "keywords_missing": ["<keyword1>", "<keyword2>"]
+  "suggestions": ["<harsh but helpful suggestion>"],
+  "keywords_found": ["<keyword>"],
+  "keywords_missing": ["<keyword>"]
 }"""
         ).with_model("openai", "gpt-5.2")
         
         # Create analysis prompt
-        prompt = f"""Analyze this resume against the job description:
+        prompt = f"""Analyze this resume against the job description. Be brutally honest with Gen-Z tone.
 
 JOB DESCRIPTION:
 {job_description}
@@ -157,26 +159,25 @@ JOB DESCRIPTION:
 RESUME:
 {resume_text}
 
-Provide a score (0-100) where:
-- 0-30: Safe (good match)
-- 31-60: Warning (needs improvement)
-- 61-80: Cooked (significant issues)
-- 81-100: Burnt (major problems)
+Score it 0-100 where:
+- 0-30: Actually not bad (safe)
+- 31-60: Lowkey needs work (warning)
+- 61-80: You're cooked fr (cooked)
+- 81-100: Absolutely cooked, start over (burnt)
 
 Focus on:
-1. ATS compatibility
-2. Keyword matching
-3. Impact statements
-4. Formatting issues
-5. Generic language
+1. Why ATS will reject this
+2. Weak/vague statements that say nothing
+3. Missing keywords from the JD
+4. Generic corporate BS
+5. Formatting fails
 
-Be honest and specific. Provide actionable feedback."""
+Be harsh, use Gen-Z slang, call out specific problems. Make them better."""
         
         user_message = UserMessage(text=prompt)
         response = await chat.send_message(user_message)
         
         # Parse JSON response
-        # Try to extract JSON from response
         json_match = re.search(r'\{.*\}', response, re.DOTALL)
         if json_match:
             result = json.loads(json_match.group())
