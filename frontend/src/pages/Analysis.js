@@ -149,10 +149,10 @@ export default function Analysis() {
               {/* Title */}
               <div className="mb-12">
                 <h1 className="font-['Azeret_Mono'] text-4xl md:text-5xl font-black tracking-tighter uppercase mb-4">
-                  UPLOAD RESUME
+                  DROP YOUR RESUME
                 </h1>
                 <p className="font-['Manrope'] text-lg text-[#86868B]">
-                  Upload your resume and paste the job description to begin analysis
+                  Time to see how cooked you really are
                 </p>
               </div>
 
