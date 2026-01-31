@@ -379,17 +379,10 @@ async def get_history():
 async def get_analysis(analysis_id: str):
     """Get specific analysis by ID"""
     try:
-        # Try to find in analyses collection
         analysis = await db.analyses.find_one({"id": analysis_id}, {"_id": 0})
         
         if not analysis:
-            # If not found, try to find in history and then get the analysis
-            history_item = await db.history.find_one({"id": analysis_id}, {"_id": 0})
-            if not history_item:
-                raise HTTPException(status_code=404, detail="Analysis not found")
-            # If we only have history, return a constructed response
-            # In practice, this shouldn't happen if both are saved correctly
-            raise HTTPException(status_code=404, detail="Full analysis details not found")
+            raise HTTPException(status_code=404, detail="Analysis not found")
         
         # Convert timestamp
         if isinstance(analysis['timestamp'], str):
