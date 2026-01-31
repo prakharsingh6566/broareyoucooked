@@ -90,7 +90,7 @@ export default function Landing() {
                 onClick={() => navigate('/analyze')}
                 className="font-mono uppercase tracking-wider text-sm font-bold px-8 py-4 bg-[#FF3B30] text-white hover:bg-[#FF453A] rounded-sm transition-all duration-200"
               >
-                RUN DIAGNOSTIC
+                CHECK IF I'M COOKED
               </motion.button>
             </motion.div>
 
