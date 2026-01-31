@@ -30,9 +30,25 @@ export default function Landing() {
           transition={{ duration: 0.6 }}
           className="px-6 md:px-12 lg:px-24 py-8"
         >
-          <div className="flex items-center gap-3">
-            <Flame className="w-8 h-8 text-[#FF3B30]" />
-            <h1 className="font-mono text-xl font-bold tracking-tight">BROAREYOUCOOKED</h1>
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-3">
+              <Flame className="w-8 h-8 text-[#FF3B30]" />
+              <h1 className="font-mono text-xl font-bold tracking-tight">BROAREYOUCOOKED</h1>
+            </div>
+            <nav className="flex items-center gap-6">
+              <button
+                onClick={() => navigate('/tips')}
+                className="font-mono text-sm text-[#86868B] hover:text-[#F5F5F7] transition-colors uppercase tracking-wider"
+              >
+                TIPS
+              </button>
+              <button
+                onClick={() => navigate('/history')}
+                className="font-mono text-sm text-[#86868B] hover:text-[#F5F5F7] transition-colors uppercase tracking-wider"
+              >
+                HISTORY
+              </button>
+            </nav>
           </div>
         </motion.header>
 
