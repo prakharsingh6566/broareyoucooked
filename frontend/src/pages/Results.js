@@ -277,7 +277,7 @@ function KeywordBox({ title, keywords, icon, color }) {
             </span>
           ))
         ) : (
-          <span className="font-mono text-xs text-[#86868B]">None detected</span>
+          <span className="font-mono text-xs text-[#86868B]">Nothing here fr 💀</span>
         )}
       </div>
     </div>
