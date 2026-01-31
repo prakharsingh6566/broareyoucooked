@@ -1,36 +1,36 @@
 # BroAreYouCooked - Resume ATS Score Checker
 
-A premium resume analysis tool that uses AI to evaluate how well your resume matches job descriptions. Features a clinical "thermal brutalist" design aesthetic with brutal honesty and zero fluff.
+Your resume is probably mid. Let's check the damage. No cap, this AI will roast you harder than ATS will.
 
-## 🔥 Core Features
+## 🔥 What This Does
 
-### Resume Analysis
-- **PDF & DOC Support**: Upload resumes in PDF, DOC, or DOCX format
-- **AI-Powered Analysis**: Uses OpenAI GPT-5.2 via Emergent LLM integration
-- **ATS Compatibility Scoring**: Get a 0-100 score indicating how "cooked" your resume is
-- **Smart Fallback**: Automatically uses mock analysis if API is unavailable
-- **Keyword Matching**: Identifies found and missing keywords from job descriptions
+### Resume Analysis (But Make It Brutal)
+- **PDF & DOC Support**: Upload whatever format, we'll read it
+- **AI That Doesn't Lie**: OpenAI GPT-5.2 via Emergent LLM key gives you the harsh truth
+- **The Cooked Score**: 0-100 score that tells you how screwed you are
+- **Smart Fallback**: Even works when the API is down (with mock roasts)
+- **Keyword Reality Check**: Shows what ATS will actually see vs what you wrote
 
-### Detailed Feedback
-- **Categorized Issues**: Organized by ATS Issues, Weak Impact, Missing Skills, Generic Language, and Formatting
-- **Problem-Why-Fix Format**: Each issue explained with context and actionable fixes
-- **Before/After Examples**: Visual examples showing how to improve specific issues
-- **Action Items**: Clear, prioritized suggestions for improvement
+### The Damage Report
+- **Brutally Honest Feedback**: Organized by how badly you messed up (ATS Issues, Weak Impact, Missing Skills, etc.)
+- **Problem-Why-Fix Format**: Each roast comes with context and how to actually fix it
+- **Before/After Examples**: Shows your cringe vs what it should be
+- **Action Items**: Clear steps to stop getting ghosted
 
-### Results Dashboard
-- **Dramatic Score Reveal**: Netflix/Spotify Wrapped-style animated score display
-- **Color-Coded Levels**:
-  - 🟢 0-30: Safe (good match)
-  - 🟡 31-60: Warning (needs improvement)  
-  - 🔴 61-80: Cooked (significant issues)
-  - 🔴 81-100: Burnt (major problems)
-- **Keyword Analysis**: Shows which keywords were found and which are missing
-- **Downloadable Results**: Export your results as an image
+### Results That Slap Different
+- **Dramatic Score Reveal**: Netflix-style animation that builds suspense before crushing your dreams
+- **Color-Coded Reality**:
+  - 🟢 0-30: Actually not bad (rare)
+  - 🟡 31-60: Lowkey needs work
+  - 🔴 61-80: You're cooked fr
+  - 🔴 81-100: Delete and start over
+- **Keyword Analysis**: Exactly what you're missing vs what you have
+- **Share Your L**: Download and share your cooked score
 
-### Analysis History
-- **MongoDB Storage**: All analyses saved to database
-- **History Tracking**: View past analyses with timestamps
-- **Retrieval by ID**: Get specific analysis results anytime
+### Extra Features
+- **Your Past L's**: History of all the times we roasted your resume
+- **Stop Getting Rejected**: Actual tips on how to not get ghosted by ATS
+- **Real Stats**: Like how recruiters spend 6 seconds on your resume (yes really)
 
 ## 🎨 Design System
 
