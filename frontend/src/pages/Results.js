@@ -142,7 +142,7 @@ export default function Results() {
                     {displayedScore}
                   </div>
                   <div className="font-mono text-xs uppercase tracking-widest text-[#86868B] mt-2">
-                    ATS COMPATIBILITY SCORE
+                    HOW COOKED YOU ARE
                   </div>
                 </motion.div>
 
