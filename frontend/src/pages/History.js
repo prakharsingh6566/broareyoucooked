@@ -74,10 +74,10 @@ export default function History() {
             transition={{ duration: 0.6 }}
           >
             <h1 className="font-['Azeret_Mono'] text-4xl md:text-5xl font-black tracking-tighter uppercase mb-4">
-              ANALYSIS HISTORY
+              YOUR PAST L'S
             </h1>
             <p className="font-['Manrope'] text-lg text-[#86868B] mb-12">
-              Review your past resume analyses
+              All the times we roasted your resume
             </p>
 
             {loading ? (
