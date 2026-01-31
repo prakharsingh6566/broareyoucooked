@@ -212,52 +212,52 @@ def generate_mock_analysis(resume_text: str, job_description: str) -> Dict[str, 
     
     score = max(0, min(100, base_score + random.randint(-15, 15)))
     
-    # Determine level
+    # Determine level and reaction
     if score <= 30:
         level = "safe"
-        reaction = "Solid match! Your resume aligns well with the requirements."
+        reaction = "Okay lowkey you're not cooked... this actually looks decent fr 🫡"
     elif score <= 60:
         level = "warning"
-        reaction = "Decent foundation, but there's room for improvement."
+        reaction = "It's giving 'needs work' vibes. Not terrible but not great either 😬"
     elif score <= 80:
         level = "cooked"
-        reaction = "Significant gaps detected. Major revisions needed."
+        reaction = "Bro... you're cooked. Like actually cooked. HR is not seeing this 💀"
     else:
         level = "burnt"
-        reaction = "Critical issues found. Complete rewrite recommended."
+        reaction = "BURNT. Delete this and start over bestie. This ain't it 🔥💀"
     
     feedback = [
         {
             "category": "ATS Issues",
-            "problem": "Missing key technical terms",
-            "why": "ATS systems scan for exact keyword matches from the job description",
-            "fix": "Add specific technologies and tools mentioned in the JD",
-            "before_example": "Worked on web projects",
-            "after_example": "Developed scalable web applications using React, Node.js, and AWS"
+            "problem": "ATS is gonna ghost you fr",
+            "why": "You're using zero keywords from the job description. Like literally zero. ATS robots don't care about your vibes",
+            "fix": "Copy-paste the exact tech stack and skills from the JD into your resume (but make it look natural)",
+            "before_example": "Worked on web stuff",
+            "after_example": "Built scalable web apps using React, Node.js, PostgreSQL, and AWS Lambda - reducing load time by 40%"
         },
         {
             "category": "Weak Impact",
-            "problem": "Vague responsibility statements",
-            "why": "Recruiters want to see measurable outcomes, not just tasks",
-            "fix": "Use the formula: Action + Tool + Result with metrics",
-            "before_example": "Managed team projects",
-            "after_example": "Led cross-functional team of 5 to deliver 3 major features, increasing user engagement by 40%"
+            "problem": "Your bullet points say nothing",
+            "why": "Recruiters spend 6 seconds on your resume. 'Managed projects' tells them absolutely nothing about what you actually did",
+            "fix": "Action verb + what you did + how + actual numbers. No cap, this is the formula.",
+            "before_example": "Managed team and completed projects",
+            "after_example": "Led 5-person engineering team to ship 3 major features ahead of schedule, increasing user retention by 35%"
         },
         {
             "category": "Generic Language",
-            "problem": "Overused buzzwords without context",
-            "why": "Terms like 'team player' and 'hardworking' are ignored by both ATS and recruiters",
-            "fix": "Replace generic phrases with specific achievements",
-            "before_example": "Team player with good communication skills",
-            "after_example": "Collaborated with 4 departments to implement company-wide process, saving 20 hours/week"
+            "problem": "Stop with the corporate cringe",
+            "why": "'Team player' and 'hardworking' mean nothing. Everyone says this. ATS literally ignores it and so do humans",
+            "fix": "Show don't tell. Give actual examples of teamwork with results",
+            "before_example": "Excellent team player with strong communication",
+            "after_example": "Collaborated with design, product, and sales teams to launch feature used by 50K+ users in first month"
         }
     ]
     
     suggestions = [
-        "Add quantifiable metrics to at least 3 bullet points",
-        "Include missing keywords: " + ", ".join(missing_keywords[:3]) if missing_keywords else "Continue using relevant keywords",
-        "Use action verbs at the start of each bullet point",
-        "Ensure consistent formatting throughout the document"
+        "Add numbers to EVERYTHING. Revenue, users, time saved, anything quantifiable",
+        f"You're missing these keywords: {', '.join(missing_keywords[:3])} - add them ASAP" if missing_keywords else "Keep using those keywords you have",
+        "Use stronger action verbs. 'Led' not 'Helped', 'Built' not 'Worked on'",
+        "One page only unless you have 10+ years experience. Nobody's reading page 2"
     ]
     
     return {
