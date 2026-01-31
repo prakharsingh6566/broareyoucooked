@@ -99,7 +99,7 @@ export default function Results() {
             className="flex items-center gap-2 font-mono text-sm text-[#86868B] hover:text-[#F5F5F7] transition-colors"
           >
             <ArrowLeft className="w-4 h-4" />
-            NEW ANALYSIS
+            TRY AGAIN
           </button>
         </header>
 
