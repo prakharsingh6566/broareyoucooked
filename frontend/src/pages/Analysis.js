@@ -17,11 +17,11 @@ export default function Analysis() {
   const [loadingMessage, setLoadingMessage] = useState(0);
 
   const loadingMessages = [
-    'SCANNING RESUME',
-    'ANALYZING ATS COMPATIBILITY',
-    'CHECKING KEYWORD MATCH',
-    'MEASURING IMPACT',
-    'COMPILING RESULTS'
+    'READING YOUR RESUME 👀',
+    'FINDING THE PROBLEMS 🔍',
+    'CHECKING HOW COOKED YOU ARE 🔥',
+    'CALCULATING THE DAMAGE 💀',
+    'PREPARING THE BAD NEWS 😬'
   ];
 
   const handleDrag = (e) => {
