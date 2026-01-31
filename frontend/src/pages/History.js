@@ -82,12 +82,12 @@ export default function History() {
 
             {loading ? (
               <div className="text-center py-12">
-                <div className="font-mono text-sm text-[#86868B]">Loading history...</div>
+                <div className="font-mono text-sm text-[#86868B]">Loading your damage report...</div>
               </div>
             ) : history.length === 0 ? (
               <div className="text-center py-12">
                 <Clock className="w-12 h-12 text-[#86868B] mx-auto mb-4" />
-                <p className="font-mono text-sm text-[#86868B]">No analyses yet</p>
+                <p className="font-mono text-sm text-[#86868B]">Nothing yet. Upload a resume to get roasted fr</p>
               </div>
             ) : (
               <div className="grid grid-cols-1 gap-4">
