@@ -1,0 +1,130 @@
+{
+  "design_system": {
+    "identity": {
+      "name": "BroAreYouCooked",
+      "archetype": "The Clinical Truth",
+      "vibe": "High-Precision Diagnostic Tool",
+      "core_metaphor": "Resume MRI / Thermal Imaging",
+      "emotional_tone": "Objective, Brutally Honest, High-Tech, Urgent"
+    },
+    "typography": {
+      "font_family": {
+        "headings": "Azeret Mono, monospace",
+        "body": "Manrope, sans-serif",
+        "accent": "JetBrains Mono, monospace"
+      },
+      "imports": [
+        "@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@300;400;600;900&family=Manrope:wght@400;500;700&family=JetBrains+Mono:wght@400&display=swap');"
+      ],
+      "scale": {
+        "h1": "text-5xl md:text-7xl font-black tracking-tighter uppercase",
+        "h2": "text-3xl md:text-5xl font-bold tracking-tight",
+        "h3": "text-xl md:text-2xl font-semibold tracking-tight",
+        "body": "text-base md:text-lg leading-relaxed text-muted-foreground",
+        "label": "text-xs font-mono uppercase tracking-widest text-muted-foreground"
+      }
+    },
+    "colors": {
+      "palette": {
+        "background": "#050505",
+        "surface": "#0F0F0F",
+        "surface_highlight": "#1A1A1A",
+        "border": "#262626",
+        "primary": "#FF3B30", 
+        "primary_hover": "#FF453A",
+        "secondary": "#30D158",
+        "accent": "#0A84FF",
+        "text_primary": "#F5F5F7",
+        "text_secondary": "#86868B"
+      },
+      "semantic": {
+        "cooked_high": "#FF3B30", 
+        "cooked_medium": "#FF9F0A",
+        "cooked_low": "#30D158",
+        "grid_line": "rgba(255, 255, 255, 0.05)"
+      },
+      "gradients": {
+        "thermal_overlay": "linear-gradient(180deg, rgba(255, 59, 48, 0) 0%, rgba(255, 59, 48, 0.1) 100%)",
+        "scan_line": "linear-gradient(to bottom, transparent, #30D158, transparent)"
+      }
+    },
+    "layout": {
+      "spacing": {
+        "container_padding": "px-6 md:px-12 lg:px-24",
+        "section_gap": "py-24 md:py-32",
+        "element_gap": "gap-6 md:gap-8"
+      },
+      "grid_system": {
+        "marketing": "grid grid-cols-1 md:grid-cols-12 gap-8",
+        "dashboard": "grid grid-cols-1 md:grid-cols-4 gap-6"
+      },
+      "border_radius": {
+        "default": "rounded-none", 
+        "button": "rounded-sm",
+        "card": "rounded-sm"
+      }
+    },
+    "visual_enhancers": {
+      "textures": {
+        "noise": "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E\")",
+        "grid": "linear-gradient(to right, #262626 1px, transparent 1px), linear-gradient(to bottom, #262626 1px, transparent 1px)"
+      },
+      "effects": {
+        "glass": "backdrop-blur-xl bg-black/40 border border-white/10",
+        "glow": "shadow-[0_0_30px_-10px_rgba(255,59,48,0.3)]",
+        "scanline_anim": "animate-scan"
+      }
+    },
+    "assets": {
+      "images": {
+        "hero_bg": "https://images.unsplash.com/photo-1741705054392-c0212d99dc97?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "cooked_bg": "https://images.unsplash.com/photo-1736095301452-00189a1e1b88?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "safe_bg": "https://images.unsplash.com/photo-1759268966417-ddff35efd0af?crop=entropy&cs=srgb&fm=jpg&q=85"
+      },
+      "icons": "lucide-react"
+    }
+  },
+  "components": {
+    "Button": {
+      "base": "font-mono uppercase tracking-wider text-sm font-bold transition-all duration-200",
+      "variants": {
+        "default": "bg-primary text-white hover:bg-primary_hover hover:shadow-[0_0_20px_rgba(255,59,48,0.5)] rounded-sm",
+        "outline": "border border-white/20 bg-transparent hover:bg-white/5 text-white rounded-sm",
+        "ghost": "hover:bg-white/5 text-muted-foreground hover:text-white"
+      }
+    },
+    "Card": {
+      "base": "bg-surface border border-border relative overflow-hidden group",
+      "hover": "hover:border-white/20 transition-colors duration-300"
+    },
+    "Input": {
+      "base": "bg-surface_highlight border-border focus:border-primary focus:ring-1 focus:ring-primary rounded-sm font-mono"
+    }
+  },
+  "instructions_to_main_agent": {
+    "general": [
+      "IMPLEMENT DARK MODE BY DEFAULT. The app should feel like a terminal or a high-end diagnostic tool.",
+      "Use 'Azeret Mono' for all headings and data values (scores). Use 'Manrope' for explanatory text.",
+      "Avoid rounded corners > 4px. Keep it sharp and technical.",
+      "Use the 'noise' texture overlay on the body background to prevent flat black.",
+      "The 'Cooked' score reveal should be dramatic. Use the 'hero_bg' (thermal image) as a subtle background behind the score card."
+    ],
+    "layout_rules": [
+      "Marketing Page: Use a 'Tetris' grid. Big bold text on the left, abstract thermal visual on the right.",
+      "Analysis Page: The upload area should look like a 'Scanner Plate'. Use a dashed border that animates on hover.",
+      "Results Page: Use a dense 'Bento' grid. The Score is the 'Hero' cell (col-span-2 row-span-2). Feedback items are smaller cells."
+    ],
+    "animation_rules": [
+      "Add a 'scanline' animation that moves down the screen during the 'Analyzing' state.",
+      "Stagger the entrance of result cards.",
+      "Numbers (Score) should count up from 0 to the final score."
+    ]
+  },
+  "universal_guidelines": [
+    "Do not use gradients for text.",
+    "Do not use generic AI emojis.",
+    "Ensure all interactive elements have hover states.",
+    "Use 'sonner' for toasts.",
+    "Add 'data-testid' to all interactive elements."
+  ]
+}
