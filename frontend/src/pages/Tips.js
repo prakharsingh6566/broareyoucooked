@@ -43,81 +43,81 @@ export default function Tips() {
             <div className="space-y-8">
               <TipSection
                 icon={<Target className="w-6 h-6" />}
-                title="ATS OPTIMIZATION"
+                title="ATS WILL GHOST YOU"
                 tips={[
                   {
                     do: true,
-                    text: "Use exact keywords from the job description"
+                    text: "Copy the exact keywords from the job post. Like literally copy-paste them into your resume"
                   },
                   {
                     do: true,
-                    text: "Include both acronyms and full terms (e.g., 'AI' and 'Artificial Intelligence')"
+                    text: "Use both 'AI' and 'Artificial Intelligence' because ATS is that dumb"
                   },
                   {
                     do: true,
-                    text: "Use standard section headings: 'Experience', 'Education', 'Skills'"
+                    text: "Stick to basic headers: 'Experience', 'Education', 'Skills' - robots can't read your creative section names"
                   },
                   {
                     do: false,
-                    text: "Use images, graphics, or complex formatting"
+                    text: "Use graphics, images, or fancy formatting. ATS literally can't see them"
                   },
                   {
                     do: false,
-                    text: "Put important info in headers/footers"
+                    text: "Put important stuff in headers/footers. That info gets deleted fr"
                   }
                 ]}
               />
 
               <TipSection
                 icon={<TrendingUp className="w-6 h-6" />}
-                title="IMPACT STATEMENTS"
+                title="YOUR BULLETS ARE MID"
                 tips={[
                   {
                     do: true,
-                    text: "Use the formula: Action Verb + Task + Tool/Method + Result"
+                    text: "Use this: Action Verb + What you did + Tool/Method + NUMBERS. Always numbers."
                   },
                   {
                     do: true,
-                    text: "Include numbers and percentages whenever possible"
+                    text: "If you can't add a percentage or metric, it's not worth putting on your resume"
                   },
                   {
                     do: true,
-                    text: "Start each bullet with a strong action verb"
+                    text: "Start with strong verbs: 'Led', 'Built', 'Shipped', 'Increased' - not 'Helped' or 'Assisted'"
                   },
                   {
                     do: false,
-                    text: "Use passive voice or vague responsibilities"
+                    text: "Say 'Responsible for...' - that tells them nothing about what you actually DID"
                   },
                   {
                     do: false,
-                    text: "List duties without showing impact"
+                    text: "List tasks without showing impact. Nobody cares that you attended meetings"
                   }
                 ]}
               />
 
               <TipSection
                 icon={<Zap className="w-6 h-6" />}
-                title="KEYWORDS & SKILLS"
+                title="KEYWORD GAME"
                 tips={[
                   {
                     do: true,
-                    text: "Mirror the exact technologies mentioned in the JD"
+                    text: "Match the tech stack exactly as written in the JD. They say 'React.js'? Don't put 'React'"
                   },
                   {
                     do: true,
-                    text: "Group skills by category for easy scanning"
+                    text: "Make a skills section that's basically the job requirements but in your words"
                   },
                   {
                     do: true,
-                    text: "Include both technical and soft skills"
+                    text: "Include soft skills only if you can back them with examples (not just saying 'good communicator')"
                   },
                   {
                     do: false,
-                    text: "Use generic terms like 'hardworking' or 'team player'"
+                    text: "Say 'hardworking team player' - literally everyone says this and it means nothing"
                   },
                   {
                     do: false,
-                    text: "List outdated or irrelevant technologies"
+                    text: "List technologies you used 5 years ago. If you can't do it now, delete it"
                   }
                 ]}
               />
@@ -128,23 +128,23 @@ export default function Tips() {
                 tips={[
                   {
                     do: true,
-                    text: "Use a clean, single-column layout"
+                    text: "Single column layout. ATS reads left to right and gets confused by columns"
                   },
                   {
                     do: true,
-                    text: "Keep font size between 10-12pt for body text"
+                    text: "Use 11pt font minimum. Smaller = unreadable on mobile = instant delete"
                   },
                   {
                     do: true,
-                    text: "Use consistent bullet points and spacing"
+                    text: "Keep it to 1 page unless you have 10+ years experience. Page 2 doesn't exist to recruiters"
                   },
                   {
                     do: false,
-                    text: "Use tables, text boxes, or columns"
+                    text: "Use tables, text boxes, or fancy columns. ATS can't parse them"
                   },
                   {
                     do: false,
-                    text: "Mix multiple fonts or colors"
+                    text: "Mix fonts or go crazy with colors. This isn't a design portfolio"
                   }
                 ]}
               />
