@@ -207,10 +207,10 @@ export default function Analysis() {
                         <Upload className="w-12 h-12 text-[#86868B]" />
                         <div className="text-center">
                           <p className="font-mono text-sm text-[#F5F5F7] mb-1">
-                            Drop your resume here
+                            Drag your resume here (or click)
                           </p>
                           <p className="font-mono text-xs text-[#86868B]">
-                            PDF, DOC, or DOCX / Max 10MB
+                            PDF or DOC • Max 10MB
                           </p>
                         </div>
                       </>
@@ -227,13 +227,13 @@ export default function Analysis() {
                 className="mb-8"
               >
                 <label className="font-mono text-xs uppercase tracking-widest text-[#86868B] mb-3 block">
-                  JOB DESCRIPTION
+                  THE JOB DESCRIPTION
                 </label>
                 <textarea
                   data-testid="job-description-input"
                   value={jobDescription}
                   onChange={(e) => setJobDescription(e.target.value)}
-                  placeholder="Paste the complete job description here..."
+                  placeholder="Copy-paste the entire job description here... don't skip anything or we can't help you"
                   className="w-full h-64 bg-[#0F0F0F] border border-[#262626] rounded-sm p-4 font-mono text-sm text-[#F5F5F7] placeholder:text-[#86868B] focus:border-[#FF3B30] focus:outline-none focus:ring-1 focus:ring-[#FF3B30] resize-none"
                 />
               </motion.div>
