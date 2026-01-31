@@ -1,0 +1,16 @@
+John Doe
+Software Engineer
+
+EXPERIENCE:
+- Developed web applications using React and Node.js
+- Worked with databases and APIs  
+- Collaborated with cross-functional teams
+
+SKILLS:
+- JavaScript, Python, React, Node.js
+- MongoDB, PostgreSQL
+- Git, Docker, AWS
+
+EDUCATION:
+Bachelor of Computer Science
+University of Technology
