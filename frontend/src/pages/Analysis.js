@@ -164,7 +164,7 @@ export default function Analysis() {
                 className="mb-8"
               >
                 <label className="font-mono text-xs uppercase tracking-widest text-[#86868B] mb-3 block">
-                  RESUME FILE
+                  YOUR RESUME (PDF/DOC)
                 </label>
                 <div
                   data-testid="file-upload-area"
