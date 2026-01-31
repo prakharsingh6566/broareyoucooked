@@ -336,12 +336,14 @@ async def analyze_resume(
         doc['timestamp'] = doc['timestamp'].isoformat()
         await db.analyses.insert_one(doc)
         
-        # Save to history
+        # Save to history with same ID
         history = AnalysisHistory(
+            id=result.id,  # Use same ID
             filename=resume.filename,
             job_description_snippet=job_description[:100] + "..." if len(job_description) > 100 else job_description,
             score=result.score,
-            level=result.level
+            level=result.level,
+            timestamp=result.timestamp
         )
         history_doc = history.model_dump()
         history_doc['timestamp'] = history_doc['timestamp'].isoformat()
