@@ -32,16 +32,15 @@ Your resume is probably mid. Let's check the damage. No cap, this AI will roast 
 - **Stop Getting Rejected**: Actual tips on how to not get ghosted by ATS
 - **Real Stats**: Like how recruiters spend 6 seconds on your resume (yes really)
 
-## 🎨 Design System
+## 🎨 The Vibe
 
-### The Thermal Brutalist
-- **Dark Theme**: Deep black (#050505) base with high contrast
-- **Signal Colors**: Red (#FF3B30) for danger, Green (#30D158) for safe
-- **Typography**: Azeret Mono for headings/data, Manrope for body text
-- **Sharp Edges**: Minimal border radius for technical feel
-- **Noise Texture**: Subtle overlay for depth
-- **Grid System**: Technical grid overlay
-- **Clinical Aesthetic**: Diagnostic tool feel with precision focus
+### Thermal Brutalist Design
+- **Dark Mode Only**: Deep black (#050505) because light mode is for résumés
+- **Signal Colors**: Red (#FF3B30) when you're cooked, Green (#30D158) when you're not
+- **Typography**: Azeret Mono for the brutal truth, Manrope for explanations
+- **Sharp Edges**: No rounded corners, this isn't Instagram
+- **Noise Texture**: Subtle grunge for that authentic feel
+- **Clinical Aesthetic**: Looks like a medical diagnosis (because it basically is)
 
 ## 🚀 Technology Stack
 
