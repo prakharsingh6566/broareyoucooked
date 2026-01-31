@@ -68,19 +68,19 @@ export default function Landing() {
                 transition={{ duration: 0.6, delay: 0.4 }}
                 className="font-mono text-xs uppercase tracking-widest text-[#86868B] mb-6"
               >
-                RESUME DIAGNOSTIC SYSTEM
+                RESUME REALITY CHECK
               </motion.div>
               
               <h1 className="font-['Azeret_Mono'] text-5xl md:text-7xl font-black tracking-tighter uppercase leading-none mb-6">
-                <span className="text-[#F5F5F7]">ARE YOU</span>
+                <span className="text-[#F5F5F7]">BRO, ARE YOU</span>
                 <br />
                 <span className="text-[#FF3B30]">COOKED?</span>
               </h1>
               
               <p className="font-['Manrope'] text-lg md:text-xl text-[#86868B] leading-relaxed mb-8 max-w-2xl">
-                Clinical ATS analysis. Brutal honesty. Zero fluff.
+                Your resume is probably mid. Let's check the damage.
                 <br />
-                See how your resume actually scores before HR does.
+                No cap, ATS is about to roast you harder than we will.
               </p>
 
               <motion.button
