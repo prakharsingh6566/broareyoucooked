@@ -34,10 +34,10 @@ export default function Tips() {
             className="max-w-4xl mx-auto"
           >
             <h1 className="font-['Azeret_Mono'] text-4xl md:text-5xl font-black tracking-tighter uppercase mb-4">
-              RESUME SURVIVAL GUIDE
+              STOP GETTING REJECTED
             </h1>
             <p className="font-['Manrope'] text-lg text-[#86868B] mb-12">
-              Insider tips to beat ATS systems and impress recruiters
+              Real talk on how to not get instantly ghosted by ATS
             </p>
 
             <div className="space-y-8">
