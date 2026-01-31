@@ -267,7 +267,7 @@ export default function Analysis() {
                 disabled={!file || !jobDescription.trim()}
                 className="w-full font-mono uppercase tracking-wider text-sm font-bold px-8 py-4 bg-[#FF3B30] text-white hover:bg-[#FF453A] rounded-sm transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
               >
-                RUN ANALYSIS
+                ROAST MY RESUME
               </motion.button>
             </motion.div>
           </div>
