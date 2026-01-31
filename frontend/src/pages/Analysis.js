@@ -48,7 +48,7 @@ export default function Analysis() {
     const validTypes = ['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'];
     
     if (!validTypes.includes(selectedFile.type)) {
-      setError('Only PDF and DOC/DOCX files are supported');
+      setError('Bro... PDF or DOC only. Come on.');
       return;
     }
     
@@ -64,12 +64,12 @@ export default function Analysis() {
 
   const handleAnalyze = async () => {
     if (!file) {
-      setError('Please upload a resume');
+      setError('Upload something first fr 😭');
       return;
     }
     
     if (!jobDescription.trim()) {
-      setError('Please enter a job description');
+      setError('Need the job description too... obviously');
       return;
     }
 
