@@ -146,7 +146,7 @@ export default function Landing() {
           className="px-6 md:px-12 lg:px-24 py-12 border-t border-[#262626]"
         >
           <p className="font-mono text-xs text-[#86868B] text-center">
-            Built for the rejected. Powered by AI.
+            Built for everyone who's been ghosted. Powered by AI that doesn't lie.
           </p>
         </motion.footer>
       </div>
