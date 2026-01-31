@@ -119,20 +119,20 @@ export default function Landing() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <FeatureCard 
               icon={<ScanLine className="w-6 h-6" />}
-              title="ATS SCAN"
-              description="See exactly what applicant tracking systems see in your resume"
+              title="ATS WILL REJECT YOU"
+              description="See exactly why robots are ghosting your application"
               delay={0.6}
             />
             <FeatureCard 
               icon={<Target className="w-6 h-6" />}
-              title="KEYWORD MATCH"
-              description="Identify missing keywords that matter to recruiters"
+              title="KEYWORD CHECK"
+              description="Literally just copying from the job description but make it less obvious"
               delay={0.7}
             />
             <FeatureCard 
               icon={<TrendingUp className="w-6 h-6" />}
-              title="IMPACT SCORING"
-              description="Measure the strength of your achievements and results"
+              title="REALITY CHECK"
+              description="Your 'team player' line isn't hitting like you think it is"
               delay={0.8}
             />
           </div>
