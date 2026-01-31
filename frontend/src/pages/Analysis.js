@@ -101,7 +101,7 @@ export default function Analysis() {
     } catch (err) {
       clearInterval(messageInterval);
       console.error('Analysis error:', err);
-      setError(err.response?.data?.detail || 'Analysis failed. Please try again.');
+      setError(err.response?.data?.detail || 'Something broke. Try again bestie.');
       setIsAnalyzing(false);
     }
   };
