@@ -157,12 +157,12 @@ export default function Tips() {
                 className="bg-[#FF3B30]/10 border border-[#FF3B30]/30 rounded-sm p-6"
               >
                 <h3 className="font-['Azeret_Mono'] text-xl font-bold mb-4 text-[#FF3B30] uppercase">
-                  Critical Stats
+                  The Harsh Truth
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                  <StatBox number="6 sec" label="Average time recruiters spend on a resume" />
-                  <StatBox number="75%" label="Of resumes are rejected by ATS before human review" />
-                  <StatBox number="40%" label="Of applicants lie about their skills" />
+                  <StatBox number="6 sec" label="Time recruiters spend on your resume (yes really)" />
+                  <StatBox number="75%" label="Resumes rejected by ATS before a human even sees them" />
+                  <StatBox number="1/250" label="Average interview rate. You're competing with 249 people" />
                 </div>
               </motion.div>
 
@@ -177,7 +177,7 @@ export default function Tips() {
                   onClick={() => navigate('/analyze')}
                   className="font-mono uppercase tracking-wider text-sm font-bold px-8 py-4 bg-[#FF3B30] text-white hover:bg-[#FF453A] rounded-sm transition-all duration-200"
                 >
-                  TEST YOUR RESUME NOW
+                  CHECK IF YOU'RE COOKED
                 </button>
               </motion.div>
             </div>
