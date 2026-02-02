@@ -241,7 +241,7 @@ export default function Results() {
                   <button
                     data-testid="share-button"
                     onClick={handleShare}
-                    className="inline-flex items-center gap-2 font-mono uppercase tracking-wider text-sm font-bold px-8 py-4 border border-[#262626] hover:border-[#FF3B30] bg-[#0F0F0F] text-[#F5F5F7] rounded-sm transition-all duration-200"
+                    className="w-full sm:w-auto inline-flex items-center justify-center gap-2 font-mono uppercase tracking-wider text-xs sm:text-sm font-bold px-6 sm:px-8 py-3 sm:py-4 border border-[#262626] hover:border-[#FF3B30] bg-[#0F0F0F] text-[#F5F5F7] rounded-sm transition-all duration-200"
                   >
                     <Share2 className="w-4 h-4" />
                     SHARE MY L
