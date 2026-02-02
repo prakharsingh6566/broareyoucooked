@@ -132,10 +132,10 @@ export default function Results() {
                   initial={{ scale: 0 }}
                   animate={{ scale: 1 }}
                   transition={{ duration: 0.6, delay: 0.3 }}
-                  className="mb-6"
+                  className="mb-4 sm:mb-6"
                 >
                   <div 
-                    className="font-['Azeret_Mono'] text-8xl md:text-9xl font-black tracking-tighter"
+                    className="font-['Azeret_Mono'] text-7xl sm:text-8xl md:text-9xl font-black tracking-tighter"
                     style={{ color: getScoreColor() }}
                     data-testid="score-display"
                   >
@@ -152,7 +152,7 @@ export default function Results() {
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.6 }}
-                      className="font-['Manrope'] text-xl md:text-2xl text-[#F5F5F7]"
+                      className="font-['Manrope'] text-base sm:text-xl md:text-2xl text-[#F5F5F7] px-2"
                       data-testid="reaction-text"
                     >
                       {analysis.reaction}
