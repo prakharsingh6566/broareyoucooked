@@ -125,11 +125,11 @@ export default function Analysis() {
 
       <div className="relative z-10">
         {/* Header */}
-        <header className="px-6 md:px-12 lg:px-24 py-8 border-b border-[#262626]">
+        <header className="px-4 sm:px-6 md:px-12 lg:px-24 py-6 md:py-8 border-b border-[#262626]">
           <button
             data-testid="back-button"
             onClick={() => navigate('/')}
-            className="flex items-center gap-2 font-mono text-sm text-[#86868B] hover:text-[#F5F5F7] transition-colors"
+            className="flex items-center gap-2 font-mono text-xs sm:text-sm text-[#86868B] hover:text-[#F5F5F7] transition-colors"
           >
             <ArrowLeft className="w-4 h-4" />
             BACK
@@ -139,7 +139,7 @@ export default function Analysis() {
         {isAnalyzing ? (
           <AnalyzingScreen message={loadingMessages[loadingMessage]} />
         ) : (
-          <div className="px-6 md:px-12 lg:px-24 py-16">
+          <div className="px-4 sm:px-6 md:px-12 lg:px-24 py-8 sm:py-12 md:py-16">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -147,11 +147,11 @@ export default function Analysis() {
               className="max-w-4xl mx-auto"
             >
               {/* Title */}
-              <div className="mb-12">
-                <h1 className="font-['Azeret_Mono'] text-4xl md:text-5xl font-black tracking-tighter uppercase mb-4">
+              <div className="mb-8 sm:mb-12">
+                <h1 className="font-['Azeret_Mono'] text-3xl sm:text-4xl md:text-5xl font-black tracking-tighter uppercase mb-3 sm:mb-4">
                   DROP YOUR RESUME
                 </h1>
-                <p className="font-['Manrope'] text-lg text-[#86868B]">
+                <p className="font-['Manrope'] text-base sm:text-lg text-[#86868B]">
                   Time to see how cooked you really are
                 </p>
               </div>
