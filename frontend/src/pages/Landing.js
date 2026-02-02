@@ -53,8 +53,8 @@ export default function Landing() {
         </motion.header>
 
         {/* Hero Section */}
-        <div className="px-6 md:px-12 lg:px-24 py-24 md:py-32">
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+        <div className="px-4 sm:px-6 md:px-12 lg:px-24 py-12 sm:py-16 md:py-24 lg:py-32">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-center">
             {/* Left: Text */}
             <motion.div 
               initial={{ opacity: 0, x: -30 }}
@@ -66,20 +66,20 @@ export default function Landing() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
-                className="font-mono text-xs uppercase tracking-widest text-[#86868B] mb-6"
+                className="font-mono text-xs uppercase tracking-widest text-[#86868B] mb-4 sm:mb-6"
               >
                 RESUME REALITY CHECK
               </motion.div>
               
-              <h1 className="font-['Azeret_Mono'] text-5xl md:text-7xl font-black tracking-tighter uppercase leading-none mb-6">
+              <h1 className="font-['Azeret_Mono'] text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tighter uppercase leading-none mb-4 sm:mb-6">
                 <span className="text-[#F5F5F7]">BRO, ARE YOU</span>
                 <br />
                 <span className="text-[#FF3B30]">COOKED?</span>
               </h1>
               
-              <p className="font-['Manrope'] text-lg md:text-xl text-[#86868B] leading-relaxed mb-8 max-w-2xl">
+              <p className="font-['Manrope'] text-base sm:text-lg md:text-xl text-[#86868B] leading-relaxed mb-6 sm:mb-8 max-w-2xl">
                 Your resume is probably mid. Let's check the damage.
-                <br />
+                <br className="hidden sm:block" />
                 No cap, ATS is about to roast you harder than we will.
               </p>
 
@@ -88,7 +88,7 @@ export default function Landing() {
                 whileHover={{ scale: 1.02, boxShadow: '0 0 30px rgba(255,59,48,0.4)' }}
                 whileTap={{ scale: 0.98 }}
                 onClick={() => navigate('/analyze')}
-                className="font-mono uppercase tracking-wider text-sm font-bold px-8 py-4 bg-[#FF3B30] text-white hover:bg-[#FF453A] rounded-sm transition-all duration-200"
+                className="w-full sm:w-auto font-mono uppercase tracking-wider text-xs sm:text-sm font-bold px-6 sm:px-8 py-3 sm:py-4 bg-[#FF3B30] text-white hover:bg-[#FF453A] rounded-sm transition-all duration-200"
               >
                 CHECK IF I'M COOKED
               </motion.button>
@@ -99,7 +99,7 @@ export default function Landing() {
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="md:col-span-5"
+              className="md:col-span-5 mt-8 md:mt-0"
             >
               <div className="relative aspect-square">
                 <div className="absolute inset-0 bg-gradient-to-br from-[#FF3B30]/20 to-[#30D158]/20 blur-3xl"></div>
