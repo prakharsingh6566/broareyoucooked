@@ -279,7 +279,7 @@ export default function Analysis() {
 
 function AnalyzingScreen({ message }) {
   return (
-    <div className="fixed inset-0 bg-[#050505] z-50 flex items-center justify-center">
+    <div className="fixed inset-0 bg-[#050505] z-50 flex items-center justify-center px-4">
       <div className="text-center">
         <motion.div
           animate={{ 
@@ -291,9 +291,9 @@ function AnalyzingScreen({ message }) {
             repeat: Infinity,
             ease: "easeInOut"
           }}
-          className="mb-8"
+          className="mb-6 sm:mb-8"
         >
-          <ScanLine className="w-16 h-16 text-[#FF3B30] mx-auto" />
+          <ScanLine className="w-12 h-12 sm:w-16 sm:h-16 text-[#FF3B30] mx-auto" />
         </motion.div>
         
         <AnimatePresence mode="wait">
@@ -303,7 +303,7 @@ function AnalyzingScreen({ message }) {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.5 }}
-            className="font-['Azeret_Mono'] text-2xl font-bold tracking-tight text-[#F5F5F7]"
+            className="font-['Azeret_Mono'] text-lg sm:text-xl md:text-2xl font-bold tracking-tight text-[#F5F5F7] px-4"
           >
             {message}
           </motion.p>
@@ -311,7 +311,7 @@ function AnalyzingScreen({ message }) {
 
         {/* Progress bar */}
         <motion.div 
-          className="mt-8 w-64 h-1 bg-[#262626] rounded-full mx-auto overflow-hidden"
+          className="mt-6 sm:mt-8 w-48 sm:w-64 h-1 bg-[#262626] rounded-full mx-auto overflow-hidden"
         >
           <motion.div
             animate={{ x: ['-100%', '100%'] }}
