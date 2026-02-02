@@ -290,26 +290,26 @@ function FeedbackCard({ item, delay }) {
       initial={{ opacity: 0, x: -20 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.6, delay }}
-      className="bg-[#0F0F0F] border border-[#262626] hover:border-[#FF3B30]/50 rounded-sm p-6 transition-colors duration-300"
+      className="bg-[#0F0F0F] border border-[#262626] hover:border-[#FF3B30]/50 rounded-sm p-4 sm:p-6 transition-colors duration-300"
       data-testid="feedback-card"
     >
       {/* Category */}
-      <div className="inline-block font-mono text-xs uppercase tracking-widest text-[#FF3B30] bg-[#FF3B30]/10 px-3 py-1 rounded-sm mb-4">
+      <div className="inline-block font-mono text-xs uppercase tracking-widest text-[#FF3B30] bg-[#FF3B30]/10 px-3 py-1 rounded-sm mb-3 sm:mb-4">
         {item.category}
       </div>
 
       {/* Problem */}
-      <h3 className="font-['Azeret_Mono'] text-xl font-bold mb-2 text-[#F5F5F7]">
+      <h3 className="font-['Azeret_Mono'] text-lg sm:text-xl font-bold mb-2 text-[#F5F5F7]">
         {item.problem}
       </h3>
 
       {/* Why */}
-      <p className="font-['Manrope'] text-sm text-[#86868B] italic mb-4">
+      <p className="font-['Manrope'] text-sm text-[#86868B] italic mb-3 sm:mb-4">
         {item.why}
       </p>
 
       {/* Fix */}
-      <div className="mb-4">
+      <div className="mb-3 sm:mb-4">
         <h4 className="font-mono text-xs uppercase tracking-widest text-[#30D158] mb-2">
           FIX
         </h4>
@@ -320,7 +320,7 @@ function FeedbackCard({ item, delay }) {
 
       {/* Examples */}
       {item.before_example && item.after_example && (
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+        <div className="grid grid-cols-1 gap-3 sm:gap-4 mt-3 sm:mt-4">
           <div className="bg-[#FF3B30]/10 border border-[#FF3B30]/30 rounded-sm p-3">
             <div className="font-mono text-xs uppercase tracking-widest text-[#FF3B30] mb-2">
               ❌ BEFORE
