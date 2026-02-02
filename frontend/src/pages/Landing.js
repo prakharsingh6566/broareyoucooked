@@ -143,7 +143,7 @@ export default function Landing() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 1 }}
-          className="px-6 md:px-12 lg:px-24 py-12 border-t border-[#262626]"
+          className="px-4 sm:px-6 md:px-12 lg:px-24 py-8 sm:py-12 border-t border-[#262626]"
         >
           <p className="font-mono text-xs text-[#86868B] text-center">
             Built for everyone who's been ghosted. Powered by AI that doesn't lie.
