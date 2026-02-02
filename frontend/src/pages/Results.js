@@ -199,7 +199,7 @@ export default function Results() {
                       HERE'S THE DAMAGE
                     </h2>
                     
-                    <div className="grid grid-cols-1 gap-6">
+                    <div className="grid grid-cols-1 gap-4 sm:gap-6">
                       {analysis.feedback.map((item, index) => (
                         <FeedbackCard key={index} item={item} delay={0.4 + index * 0.1} />
                       ))}
@@ -213,13 +213,13 @@ export default function Results() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.5 }}
-                    className="mb-12"
+                    className="mb-8 sm:mb-12"
                   >
-                    <h2 className="font-['Azeret_Mono'] text-3xl font-bold tracking-tight mb-6 uppercase">
+                    <h2 className="font-['Azeret_Mono'] text-2xl sm:text-3xl font-bold tracking-tight mb-4 sm:mb-6 uppercase">
                       FIX YOUR RESUME
                     </h2>
                     
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="grid grid-cols-1 gap-4 sm:gap-6">
                       {analysis.suggestions.map((suggestion, index) => (
                         <SuggestionCard 
                           key={index} 
