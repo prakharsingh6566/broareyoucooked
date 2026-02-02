@@ -92,28 +92,28 @@ export default function Results() {
 
       <div className="relative z-10">
         {/* Header */}
-        <header className="px-6 md:px-12 lg:px-24 py-8 border-b border-[#262626]">
+        <header className="px-4 sm:px-6 md:px-12 lg:px-24 py-6 md:py-8 border-b border-[#262626]">
           <button
             data-testid="back-to-home-button"
             onClick={() => navigate('/')}
-            className="flex items-center gap-2 font-mono text-sm text-[#86868B] hover:text-[#F5F5F7] transition-colors"
+            className="flex items-center gap-2 font-mono text-xs sm:text-sm text-[#86868B] hover:text-[#F5F5F7] transition-colors"
           >
             <ArrowLeft className="w-4 h-4" />
             TRY AGAIN
           </button>
         </header>
 
-        <div className="px-6 md:px-12 lg:px-24 py-16">
+        <div className="px-4 sm:px-6 md:px-12 lg:px-24 py-8 sm:py-12 md:py-16">
           {/* Score Hero Section */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
-            className="mb-16"
+            className="mb-12 sm:mb-16"
           >
             <div 
               ref={shareRef}
-              className={`relative max-w-2xl mx-auto text-center p-12 rounded-sm border border-[#262626] bg-gradient-to-b ${getScoreGradient()} overflow-hidden`}
+              className={`relative max-w-2xl mx-auto text-center p-8 sm:p-12 rounded-sm border border-[#262626] bg-gradient-to-b ${getScoreGradient()} overflow-hidden`}
             >
               {/* Background image */}
               <div className="absolute inset-0 opacity-20">
