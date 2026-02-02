@@ -115,8 +115,8 @@ export default function Landing() {
         </div>
 
         {/* Features Grid */}
-        <div className="px-6 md:px-12 lg:px-24 py-16">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="px-4 sm:px-6 md:px-12 lg:px-24 py-8 sm:py-12 md:py-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
             <FeatureCard 
               icon={<ScanLine className="w-6 h-6" />}
               title="ATS WILL REJECT YOU"
