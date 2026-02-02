@@ -224,7 +224,7 @@ export default function Analysis() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                className="mb-8"
+                className="mb-6 sm:mb-8"
               >
                 <label className="font-mono text-xs uppercase tracking-widest text-[#86868B] mb-3 block">
                   THE JOB DESCRIPTION
@@ -234,7 +234,7 @@ export default function Analysis() {
                   value={jobDescription}
                   onChange={(e) => setJobDescription(e.target.value)}
                   placeholder="Copy-paste the entire job description here... don't skip anything or we can't help you"
-                  className="w-full h-64 bg-[#0F0F0F] border border-[#262626] rounded-sm p-4 font-mono text-sm text-[#F5F5F7] placeholder:text-[#86868B] focus:border-[#FF3B30] focus:outline-none focus:ring-1 focus:ring-[#FF3B30] resize-none"
+                  className="w-full h-48 sm:h-64 bg-[#0F0F0F] border border-[#262626] rounded-sm p-3 sm:p-4 font-mono text-xs sm:text-sm text-[#F5F5F7] placeholder:text-[#86868B] focus:border-[#FF3B30] focus:outline-none focus:ring-1 focus:ring-[#FF3B30] resize-none"
                 />
               </motion.div>
 
