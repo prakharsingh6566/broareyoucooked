@@ -161,7 +161,7 @@ export default function Analysis() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.1 }}
-                className="mb-8"
+                className="mb-6 sm:mb-8"
               >
                 <label className="font-mono text-xs uppercase tracking-widest text-[#86868B] mb-3 block">
                   YOUR RESUME (PDF/DOC)
@@ -174,7 +174,7 @@ export default function Analysis() {
                   onDrop={handleDrop}
                   onClick={() => fileInputRef.current?.click()}
                   className={`
-                    relative border-2 border-dashed rounded-sm p-12 cursor-pointer
+                    relative border-2 border-dashed rounded-sm p-8 sm:p-12 cursor-pointer
                     transition-all duration-300
                     ${dragActive 
                       ? 'border-[#FF3B30] bg-[#FF3B30]/5' 
@@ -191,12 +191,12 @@ export default function Analysis() {
                     data-testid="file-input"
                   />
                   
-                  <div className="flex flex-col items-center gap-4">
+                  <div className="flex flex-col items-center gap-3 sm:gap-4">
                     {file ? (
                       <>
-                        <FileText className="w-12 h-12 text-[#30D158]" />
+                        <FileText className="w-10 h-10 sm:w-12 sm:h-12 text-[#30D158]" />
                         <div className="text-center">
-                          <p className="font-mono text-sm text-[#F5F5F7] mb-1">{file.name}</p>
+                          <p className="font-mono text-xs sm:text-sm text-[#F5F5F7] mb-1 break-all px-2">{file.name}</p>
                           <p className="font-mono text-xs text-[#86868B]">
                             {(file.size / 1024).toFixed(1)} KB
                           </p>
@@ -204,9 +204,9 @@ export default function Analysis() {
                       </>
                     ) : (
                       <>
-                        <Upload className="w-12 h-12 text-[#86868B]" />
+                        <Upload className="w-10 h-10 sm:w-12 sm:h-12 text-[#86868B]" />
                         <div className="text-center">
-                          <p className="font-mono text-sm text-[#F5F5F7] mb-1">
+                          <p className="font-mono text-xs sm:text-sm text-[#F5F5F7] mb-1 px-2">
                             Drag your resume here (or click)
                           </p>
                           <p className="font-mono text-xs text-[#86868B]">
